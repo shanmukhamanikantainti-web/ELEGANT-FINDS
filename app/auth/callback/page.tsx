@@ -1,12 +1,12 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, Suspense } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { motion } from 'framer-motion'
 import { CheckCircle } from 'lucide-react'
 import { supabase } from '@/lib/supabase/client'
 
-export default function AuthCallbackPage() {
+function AuthCallbackContent() {
   const router = useRouter()
   const searchParams = useSearchParams()
   const [status, setStatus] = useState<'loading' | 'success' | 'error'>('loading')
@@ -100,5 +100,17 @@ export default function AuthCallbackPage() {
         )}
       </motion.div>
     </div>
+  )
+}
+
+export default function AuthCallbackPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-[80vh] flex items-center justify-center section-padding bg-sand-50">
+        <div className="w-20 h-20 border-4 border-burgundy-700 border-t-transparent rounded-full animate-spin mx-auto" />
+      </div>
+    }>
+      <AuthCallbackContent />
+    </Suspense>
   )
 }
