@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact — Elegant Finds</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3, .font-serif { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary": "#805065",
+                      "on-secondary-fixed-variant": "#65394d",
+                      "on-primary-fixed-variant": "#8d0051",
+                      "tertiary-fixed-dim": "#c6c6c7",
+                      "inverse-on-surface": "#f1f1f1",
+                      "surface-tint": "#b7046c",
+                      "tertiary-container": "#939494",
+                      "on-tertiary-fixed-variant": "#454747",
+                      "outline": "#8b7078",
+                      "error-container": "#ffdad6",
+                      "on-secondary-fixed": "#330e21",
+                      "primary-fixed-dim": "#ffb0cc",
+                      "on-surface-variant": "#584048",
+                      "surface-container-low": "#f3f3f3",
+                      "surface-bright": "#f9f9f9",
+                      "surface": "#f9f9f9",
+                      "on-primary-fixed": "#3e0021",
+                      "surface-container-highest": "#e2e2e2",
+                      "background": "#f9f9f9",
+                      "tertiary-fixed": "#e2e2e2",
+                      "on-primary-container": "#5d0034",
+                      "error": "#ba1a1a",
+                      "surface-variant": "#e2e2e2",
+                      "on-secondary-container": "#7b4b60",
+                      "on-primary": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "on-surface": "#1a1c1c",
+                      "outline-variant": "#dfbec8",
+                      "secondary-fixed": "#ffd8e6",
+                      "primary": "#b7046c",
+                      "surface-dim": "#dadada",
+                      "inverse-surface": "#2f3131",
+                      "on-tertiary-container": "#2b2d2d",
+                      "inverse-primary": "#ffb0cc",
+                      "on-background": "#1a1c1c",
+                      "secondary-container": "#fec0d9",
+                      "surface-container-high": "#e8e8e8",
+                      "on-error": "#ffffff",
+                      "secondary-fixed-dim": "#f2b6ce",
+                      "on-tertiary-fixed": "#1a1c1c",
+                      "surface-container": "#eeeeee",
+                      "primary-container": "#ff4fa3",
+                      "on-secondary": "#ffffff",
+                      "surface-container-lowest": "#ffffff",
+                      "tertiary": "#5d5f5f",
+                      "primary-fixed": "#ffd9e4",
+                      "on-error-container": "#93000a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              }
+            },
+          }
+        }
+      </script>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Top Navigation Shell -->
+<nav class="bg-surface/80 backdrop-blur-xl docked full-width top-0 sticky z-50">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<a class="text-2xl font-serif tracking-tighter text-on-surface" href="#">Elegant Finds</a>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-300" href="#">Hair Studio</a>
+<a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-300" href="#">Jewelry Edit</a>
+<a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-300" href="#">Korean Picks</a>
+<a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-300" href="#">Gift Lounge</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-primary hover:scale-95 duration-200" data-icon="favorite">favorite</button>
+<button class="material-symbols-outlined text-primary hover:scale-95 duration-200" data-icon="shopping_bag">shopping_bag</button>
+<button class="text-primary font-bold border-b-2 border-primary pb-1">Contact</button>
+</div>
+</div>
+</nav>
+<main class="min-h-screen">
+<!-- Hero Section -->
+<section class="relative pt-24 pb-12 px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-16">
+<div class="z-10">
+<span class="text-primary font-bold uppercase tracking-[0.2em] text-xs mb-4 block">Get In Touch</span>
+<h1 class="text-6xl md:text-7xl font-serif leading-tight mb-8 tracking-tighter">Connected in <br/><span class="italic text-primary-container">Every Detail.</span></h1>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-md">Our digital atelier is open for your inquiries. Whether seeking style advice or tracking a curated find, our team is here to assist.</p>
+</div>
+<div class="relative">
+<div class="aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl">
+<img alt="Contact Support" class="w-full h-full object-cover" data-alt="Close-up of a stylish woman with soft lighting holding a designer smartphone, blurred boutique background with warm pink tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqnfuYx6JqwXbS6v289zSXccsGCzdtw1gEEdzppTUoAXUSU5gp0R91Ft6D-qBpN6VYpk90euqhVlUwyj8o9kU5aJMXJBrTSRntzUFtBu1ttWamfl-wT7IrNy2qQHK4_hXbcR4ldphwDwSlhMYIm9UgNa13tv2Cp4e9DBmjUvJ6L5QBL0dtvZyfRHViKvxllh83GMuHTEAbMC0mGA8hs-zpaUCoJqqzCbOJRY1NOTFtnMNOI2ZpSUcv21EVW42ec2uXxm6tnJ5AkHk"/>
+</div>
+<div class="absolute -bottom-8 -left-8 glass-panel p-8 rounded-xl shadow-xl max-w-xs">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="auto_awesome">auto_awesome</span>
+<h3 class="font-bold text-on-surface">Curated Concierge</h3>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">Experience personalized support tailored to your unique aesthetic preferences.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Methods Grid -->
+<section class="py-24 px-8 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- WhatsApp Integration -->
+<a class="group bg-surface-container-lowest p-10 rounded-[2rem] flex flex-col items-center text-center transition-all duration-500 hover:translate-y-[-8px]" href="#">
+<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="chat_bubble">chat_bubble</span>
+</div>
+<h4 class="text-xl font-serif mb-2">WhatsApp Us</h4>
+<p class="text-on-surface-variant text-sm mb-6">Immediate styling advice from our London atelier.</p>
+<span class="text-primary font-bold text-sm tracking-wide group-hover:underline">MESSAGE NOW</span>
+</a>
+<!-- Instagram Link -->
+<a class="group bg-surface-container-lowest p-10 rounded-[2rem] flex flex-col items-center text-center transition-all duration-500 hover:translate-y-[-8px]" href="#">
+<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="photo_camera">photo_camera</span>
+</div>
+<h4 class="text-xl font-serif mb-2">Instagram DM</h4>
+<p class="text-on-surface-variant text-sm mb-6">Tag us in your fits or send a direct inquiry.</p>
+<span class="text-primary font-bold text-sm tracking-wide group-hover:underline">@ELEGANTFINDS</span>
+</a>
+<!-- Email Contact -->
+<div class="bg-surface-container-lowest p-10 rounded-[2rem] flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-3xl" data-icon="mail">mail</span>
+</div>
+<h4 class="text-xl font-serif mb-2">Email Support</h4>
+<p class="text-on-surface-variant text-sm mb-6">For business inquiries and order status.</p>
+<span class="text-on-surface font-semibold text-sm">hello@elegantfinds.com</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Form & Map Section -->
+<section class="py-24 px-8">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20">
+<!-- Inquiry Form -->
+<div>
+<h2 class="text-4xl font-serif mb-12">Send an Inquiry</h2>
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="text-xs font-bold text-on-surface-variant tracking-widest uppercase">Full Name</label>
+<input class="w-full bg-surface-container-low border-0 rounded-xl px-6 py-4 focus:ring-1 focus:ring-primary focus:bg-white transition-all text-sm" placeholder="Your name" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold text-on-surface-variant tracking-widest uppercase">Email Address</label>
+<input class="w-full bg-surface-container-low border-0 rounded-xl px-6 py-4 focus:ring-1 focus:ring-primary focus:bg-white transition-all text-sm" placeholder="example@email.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold text-on-surface-variant tracking-widest uppercase">Subject</label>
+<select class="w-full bg-surface-container-low border-0 rounded-xl px-6 py-4 focus:ring-1 focus:ring-primary focus:bg-white transition-all text-sm appearance-none">
+<option>Product Availability</option>
+<option>Order Tracking</option>
+<option>Styling Consultation</option>
+<option>Returns &amp; Exchanges</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold text-on-surface-variant tracking-widest uppercase">Your Message</label>
+<textarea class="w-full bg-surface-container-low border-0 rounded-xl px-6 py-4 focus:ring-1 focus:ring-primary focus:bg-white transition-all text-sm" placeholder="How can we help you today?" rows="6"></textarea>
+</div>
+<button class="w-full bg-gradient-to-r from-primary to-primary-container text-on-primary font-semibold py-5 rounded-xl hover:shadow-[0px_20px_40px_rgba(183,4,108,0.2)] transition-all transform active:scale-95" type="submit">
+                            Submit Request
+                        </button>
+</form>
+</div>
+<!-- Location Graphic -->
+<div class="space-y-12">
+<div class="rounded-[2rem] overflow-hidden shadow-2xl relative h-full min-h-[400px]">
+<div class="absolute inset-0 bg-secondary-container/20 mix-blend-multiply z-10 pointer-events-none"></div>
+<img alt="Our Location" class="w-full h-full object-cover grayscale opacity-90" data-alt="Artistic high-angle map view of a minimalist urban layout, featuring clean streets, soft pink and grey color palette, editorial aesthetic" data-location="London" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSg72cJl4lB5loqf42PdZemCqUm-JbYJBsooUrtLj6iAHEZb-7-90vWvLIfPul7PSpJpstggSwJFR6YeXHvb6hZVSXSpvku4lOLc-Dz-lkfI2TqzqWn3wlgNvC9BxEA_6fDkmFWlXus63r_1-1bRDex6th1bJOJ2chxcJazVjBLcpJlX4XjrkwmMCkej82OYQOfld_jzcGz_7Jvsnxh923xN_gBrTlBStcV8izG_6UxEhFYmibDl74QsGdqHvxBVOWRF6C_AmJTHM"/>
+<div class="absolute bottom-8 right-8 z-20 glass-panel p-6 rounded-xl border border-white/20">
+<p class="font-serif text-lg mb-1">Seoul Showroom</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest">Available by Appointment</p>
+</div>
+<!-- Decorative Pin -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
+<div class="w-4 h-4 bg-primary rounded-full animate-pulse ring-8 ring-primary/20"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-surface-container-low dark:bg-slate-950 full-width pt-16 pb-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 max-w-7xl mx-auto">
+<div class="space-y-6">
+<a class="text-xl font-serif text-on-surface" href="#">Elegant Finds</a>
+<p class="text-on-surface-variant/80 text-sm leading-relaxed">Curating timeless aesthetics for the modern digital atelier. Affordable luxury, redefined.</p>
+</div>
+<div>
+<h4 class="font-serif text-primary mb-6">Social</h4>
+<div class="flex flex-col gap-3">
+<a class="text-on-surface-variant/80 text-sm hover:text-primary hover:underline transition-all" href="#">WhatsApp</a>
+<a class="text-on-surface-variant/80 text-sm hover:text-primary hover:underline transition-all" href="#">Instagram</a>
+<a class="text-on-surface-variant/80 text-sm hover:text-primary hover:underline transition-all" href="#">Pinterest</a>
+</div>
+</div>
+<div>
+<h4 class="font-serif text-primary mb-6">Services</h4>
+<div class="flex flex-col gap-3">
+<a class="text-on-surface-variant/80 text-sm hover:text-primary hover:underline transition-all" href="#">Newsletter</a>
+<a class="text-on-surface-variant/80 text-sm hover:text-primary hover:underline transition-all" href="#">Shipping</a>
+<a class="text-on-surface-variant/80 text-sm hover:text-primary hover:underline transition-all" href="#">Returns</a>
+</div>
+</div>
+<div>
+<h4 class="font-serif text-primary mb-6">Atelier</h4>
+<div class="flex flex-col gap-3">
+<a class="text-on-surface-variant/80 text-sm hover:text-primary hover:underline transition-all" href="#">Our Story</a>
+<a class="text-on-surface-variant/80 text-sm hover:text-primary hover:underline transition-all" href="#">Contact</a>
+<a class="text-on-surface-variant/80 text-sm hover:text-primary hover:underline transition-all" href="#">Terms</a>
+</div>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-outline-variant/20 max-w-7xl mx-auto text-center">
+<p class="text-xs text-on-surface-variant/60 tracking-widest uppercase">© 2024 Elegant Finds. Designed for the Digital Atelier.</p>
+</div>
+</footer>
+</body></html>

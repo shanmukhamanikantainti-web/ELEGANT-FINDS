@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS Variables */
+:root {
+  --font-noto-serif: 'Noto Serif', serif;
+  --font-plus-jakarta: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-plus-jakarta), sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @apply bg-surface text-on-surface selection:bg-secondary-container selection:text-on-secondary-container;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-noto-serif), serif;
+  line-height: 1.1;
+  font-weight: 700;
+  @apply tracking-tight;
+}
+
+h1 {
+  @apply text-6xl md:text-8xl;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  @apply text-5xl md:text-6xl;
+  letter-spacing: -0.015em;
+}
+
+h3 {
+  @apply text-2xl md:text-3xl font-headline;
+}
+
+/* Custom Utility Classes */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .glass-nav {
+    @apply backdrop-blur-[20px] bg-surface/80 border-b border-outline-variant/5;
+  }
+  
+  .cta-glow {
+    @apply bg-gradient-to-br from-primary to-primary-container shadow-luxe transition-all duration-300;
+  }
+
+  .cta-glow:hover {
+    box-shadow: 0px 20px 40px rgba(183, 4, 108, 0.15);
+    @apply -translate-y-1;
+  }
+  
+  .custom-shadow {
+    @apply shadow-luxe;
+  }
+}
+
+/* Button Styles - Digital Atelier */
+.btn-primary {
+  @apply bg-gradient-to-r from-primary to-primary-container text-white px-10 py-4 rounded-xl text-lg font-semibold cta-glow transition-all duration-300 hover:-translate-y-1 active:scale-95;
+}
+
+.btn-secondary {
+  @apply px-10 py-4 rounded-xl text-lg font-medium text-on-surface flex items-center gap-2 transition-all duration-300;
+}
+
+/* Input Styles - Soft Input */
+.input-luxury {
+  @apply w-full px-6 py-4 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary-fixed transition-all outline-none;
+}
+
+/* Container */
+.container-custom {
+  @apply max-w-7xl mx-auto px-8;
+}
+
+/* Section Spacing */
+.section-padding {
+  @apply py-24;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-surface-container-low;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary-fixed-dim rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary;
+}
+
+/* Selection */
+::selection {
+  @apply bg-primary-fixed-dim text-on-primary-fixed;
+}
+
+/* Image Placeholder */
+.image-placeholder {
+  @apply bg-surface-container-low animate-pulse;
+}
+
+/* Material Symbols Integration */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+  vertical-align: middle;
+}

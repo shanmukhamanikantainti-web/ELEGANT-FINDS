@@ -1,0 +1,33 @@
+
+> elegantfinds@1.0.0 dev
+> next dev
+
+ ⚠ Port 3000 is in use, trying 3001 instead.
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3001
+  - Environments: .env.local
+  - Experiments (use with caution):
+    · typedRoutes
+
+ ✓ Starting...
+ ⚠ Mismatching @next/swc version, detected: 16.2.2 while Next.js is on 14.2.33. Please ensure these match
+ ⚠ Found lockfile missing swc dependencies, patching...
+Error: ENOENT: no such file or directory, open 'C:\Users\shanm\OneDrive\Desktop\elegantfinds\.next\prerender-manifest.json'
+    at readFileSync (node:fs:448:20)
+    at loadManifest (C:\Users\shanm\OneDrive\Desktop\elegantfinds\node_modules\next\dist\server\load-manifest.external.js:51:41)
+    at DevServer.getPrerenderManifest (C:\Users\shanm\OneDrive\Desktop\elegantfinds\node_modules\next\dist\server\next-server.js:1247:78)
+    at new Server (C:\Users\shanm\OneDrive\Desktop\elegantfinds\node_modules\next\dist\server\base-server.js:348:32)
+    at new NextNodeServer (C:\Users\shanm\OneDrive\Desktop\elegantfinds\node_modules\next\dist\server\next-server.js:153:9)
+    at new DevServer (C:\Users\shanm\OneDrive\Desktop\elegantfinds\node_modules\next\dist\server\dev\next-dev-server.js:138:9)
+    at NextServer.createServer (C:\Users\shanm\OneDrive\Desktop\elegantfinds\node_modules\next\dist\server\next.js:175:24)
+    at C:\Users\shanm\OneDrive\Desktop\elegantfinds\node_modules\next\dist\server\next.js:213:42
+    at async NextServer.prepare (C:\Users\shanm\OneDrive\Desktop\elegantfinds\node_modules\next\dist\server\next.js:154:24)
+    at async initializeImpl (C:\Users\shanm\OneDrive\Desktop\elegantfinds\node_modules\next\dist\server\lib\render-server.js:98:5)
+    at async initialize (C:\Users\shanm\OneDrive\Desktop\elegantfinds\node_modules\next\dist\server\lib\router-server.js:429:22)
+    at async Server.<anonymous> (C:\Users\shanm\OneDrive\Desktop\elegantfinds\node_modules\next\dist\server\lib\start-server.js:249:36) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\shanm\\OneDrive\\Desktop\\elegantfinds\\.next\\prerender-manifest.json'
+}
+[?25h

@@ -1,0 +1,107 @@
+import type { Config } from 'tailwindcss'
+
+const config: Config = {
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: '#b7046c',
+        'primary-container': '#ff4fa3',
+        'primary-fixed': '#ffd9e4',
+        'primary-fixed-dim': '#ffb0cc',
+        secondary: '#805065',
+        'secondary-container': '#fec0d9',
+        'secondary-fixed': '#ffd8e6',
+        'secondary-fixed-dim': '#f2b6ce',
+        tertiary: '#5d5f5f',
+        'tertiary-container': '#939494',
+        'tertiary-fixed': '#e2e2e2',
+        'tertiary-fixed-dim': '#c6c6c7',
+        error: '#ba1a1a',
+        'error-container': '#ffdad6',
+        surface: '#f9f9f9',
+        'surface-bright': '#f9f9f9',
+        'surface-dim': '#dadada',
+        'surface-variant': '#e2e2e2',
+        'surface-container-lowest': '#ffffff',
+        'surface-container-low': '#f3f3f3',
+        'surface-container': '#eeeeee',
+        'surface-container-high': '#e8e8e8',
+        'surface-container-highest': '#e2e2e2',
+        background: '#f9f9f9',
+        outline: '#8b7078',
+        'outline-variant': '#dfbec8',
+        'on-primary': '#ffffff',
+        'on-primary-container': '#5d0034',
+        'on-primary-fixed': '#3e0021',
+        'on-primary-fixed-variant': '#8d0051',
+        'on-secondary': '#ffffff',
+        'on-secondary-container': '#7b4b60',
+        'on-secondary-fixed': '#330e21',
+        'on-secondary-fixed-variant': '#65394d',
+        'on-tertiary': '#ffffff',
+        'on-tertiary-container': '#2b2d2d',
+        'on-tertiary-fixed': '#1a1c1c',
+        'on-tertiary-fixed-variant': '#454747',
+        'on-error': '#ffffff',
+        'on-error-container': '#93000a',
+        'on-surface': '#1a1c1c',
+        'on-surface-variant': '#584048',
+        'on-background': '#1a1c1c',
+        'inverse-surface': '#2f3131',
+        'inverse-on-surface': '#f1f1f1',
+        'inverse-primary': '#ffb0cc',
+      },
+      fontFamily: {
+        headline: ['var(--font-noto-serif)', 'serif'],
+        body: ['var(--font-plus-jakarta)', 'sans-serif'],
+      },
+      borderRadius: {
+        'xl': '1.5rem',
+      },
+      boxShadow: {
+        'luxe': '0px 20px 40px rgba(183, 4, 108, 0.06)',
+      },
+      spacing: {
+        '18': '4.5rem',
+        '22': '5.5rem',
+        '26': '6.5rem',
+      },
+      animation: {
+        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+        'fade-in-down': 'fadeInDown 0.8s ease-out forwards',
+        'scale-in': 'scaleIn 0.5s ease-out forwards',
+        'slide-in-right': 'slideInRight 0.5s ease-out forwards',
+        'slide-in-left': 'slideInLeft 0.5s ease-out forwards',
+      },
+      keyframes: {
+        fadeInUp: {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        fadeInDown: {
+          '0%': { opacity: '0', transform: 'translateY(-20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        scaleIn: {
+          '0%': { opacity: '0', transform: 'scale(0.9)' },
+          '100%': { opacity: '1', transform: 'scale(1)' },
+        },
+        slideInRight: {
+          '0%': { opacity: '0', transform: 'translateX(20px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+        slideInLeft: {
+          '0%': { opacity: '0', transform: 'translateX(-20px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+      },
+    },
+  },
+  plugins: [],
+}
+export default config

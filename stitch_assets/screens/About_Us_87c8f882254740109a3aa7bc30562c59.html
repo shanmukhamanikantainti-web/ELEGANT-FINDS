@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About | Elegant Finds</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary": "#805065",
+                    "on-secondary-fixed-variant": "#65394d",
+                    "on-primary-fixed-variant": "#8d0051",
+                    "tertiary-fixed-dim": "#c6c6c7",
+                    "inverse-on-surface": "#f1f1f1",
+                    "surface-tint": "#b7046c",
+                    "tertiary-container": "#939494",
+                    "on-tertiary-fixed-variant": "#454747",
+                    "outline": "#8b7078",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed": "#330e21",
+                    "primary-fixed-dim": "#ffb0cc",
+                    "on-surface-variant": "#584048",
+                    "surface-container-low": "#f3f3f3",
+                    "surface-bright": "#f9f9f9",
+                    "surface": "#f9f9f9",
+                    "on-primary-fixed": "#3e0021",
+                    "surface-container-highest": "#e2e2e2",
+                    "background": "#f9f9f9",
+                    "tertiary-fixed": "#e2e2e2",
+                    "on-primary-container": "#5d0034",
+                    "error": "#ba1a1a",
+                    "surface-variant": "#e2e2e2",
+                    "on-secondary-container": "#7b4b60",
+                    "on-primary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-surface": "#1a1c1c",
+                    "outline-variant": "#dfbec8",
+                    "secondary-fixed": "#ffd8e6",
+                    "primary": "#b7046c",
+                    "surface-dim": "#dadada",
+                    "inverse-surface": "#2f3131",
+                    "on-tertiary-container": "#2b2d2d",
+                    "inverse-primary": "#ffb0cc",
+                    "on-background": "#1a1c1c",
+                    "secondary-container": "#fec0d9",
+                    "surface-container-high": "#e8e8e8",
+                    "on-error": "#ffffff",
+                    "secondary-fixed-dim": "#f2b6ce",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "surface-container": "#eeeeee",
+                    "primary-container": "#ff4fa3",
+                    "on-secondary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary": "#5d5f5f",
+                    "primary-fixed": "#ffd9e4",
+                    "on-error-container": "#93000a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "2xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3 { font-family: 'Noto Serif', serif; }
+        .glass-nav { background: rgba(249, 249, 249, 0.8); backdrop-filter: blur(20px); }
+        .hero-gradient { background: linear-gradient(135deg, rgba(183, 4, 108, 0.05) 0%, rgba(255, 79, 163, 0.05) 100%); }
+        .cta-gradient { background: linear-gradient(135deg, #b7046c 0%, #ff4fa3 100%); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- TopNavBar -->
+<nav class="bg-surface/80 dark:bg-slate-900/80 backdrop-blur-xl docked full-width top-0 sticky z-50">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif tracking-tighter text-on-surface dark:text-white">Elegant Finds</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-on-surface-variant dark:text-slate-400 font-medium hover:text-primary-container dark:hover:text-pink-200 transition-colors duration-300" href="#">Hair Studio</a>
+<a class="text-on-surface-variant dark:text-slate-400 font-medium hover:text-primary-container dark:hover:text-pink-200 transition-colors duration-300" href="#">Jewelry Edit</a>
+<a class="text-on-surface-variant dark:text-slate-400 font-medium hover:text-primary-container dark:hover:text-pink-200 transition-colors duration-300" href="#">Korean Picks</a>
+<a class="text-on-surface-variant dark:text-slate-400 font-medium hover:text-primary-container dark:hover:text-pink-200 transition-colors duration-300" href="#">Gift Lounge</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="material-symbols-outlined text-primary dark:text-pink-400">favorite</button>
+<button class="material-symbols-outlined text-primary dark:text-pink-400">shopping_bag</button>
+<button class="md:hidden material-symbols-outlined">menu</button>
+</div>
+</div>
+</nav>
+<main>
+<!-- Editorial Hero Section -->
+<section class="relative overflow-hidden py-24 md:py-32 hero-gradient">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-6 z-10">
+<span class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container text-xs font-semibold tracking-widest mb-6">ESTABLISHED 2024</span>
+<h1 class="text-5xl md:text-7xl leading-tight mb-8 tracking-tighter">The Art of <br/><span class="italic text-primary">Intentional</span> Living.</h1>
+<p class="text-lg text-on-surface-variant leading-relaxed max-w-md mb-10">
+                        Elegant Finds was born from a desire to bridge the gap between high-precision European luxury and the effortless, soft minimalism of modern Seoul.
+                    </p>
+<div class="flex gap-4">
+<button class="cta-gradient text-white px-8 py-4 rounded-2xl font-semibold hover:shadow-[0px_20px_40px_rgba(183,4,108,0.15)] transition-all active:scale-95">Explore Collections</button>
+</div>
+</div>
+<div class="md:col-span-6 relative">
+<div class="relative w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Premium minimalist gift box on a white marble surface with soft shadows and a single pink peony flower" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnSxKGtbDCgSgapUaWFai3x2SLG7oeRZzJ3PFQmXL1SB_7nVODrzXT_UFv0M4915l97RTV1VWGw0PF9agO-xg9m7ugtbo9wUpjjY37HRQJSe69-me38r_DNiKsW2pHsO8xvLYe5Coh26Ls-VWCZX5aKrT2nWwFCql7aSwlbnKwcYZjLQA9zIhO8eOzJ-Nh73o_MRXwF0WTB7_IhCQT1IYJZAA_N668DwxLOa3V37IKLpwP25A-bzYvdslJDfDOXgN4HVWa1Y7unUY"/>
+</div>
+<div class="absolute -bottom-10 -left-10 w-48 h-48 bg-surface-container-lowest p-4 rounded-2xl shadow-xl hidden lg:block border border-outline-variant/10">
+<img class="w-full h-full object-cover rounded-xl" data-alt="Close up of high end minimalist jewelry in a soft velvet jewelry case" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmV07jr4gWLAI-3DCCaVobQnBoKf52yWOp7WC_TP5d9Es2odhLl1V5GBd1a1Wm_NGHdYQw3EWgGl7QU0VdCicB01BLPADIaZxDy8lazFBbTs_X34fw8qZE5N2umVcMKwz6b4sYeRl6nEOf__l6zSbYNZDwJ2TrKDZPUd6h4FTCS4okioaDpJBcJmkRJLOBo95UxanOCBFG_IVbJi-GVwl1C9y2VB4X0hdLmeh94Pk0Wj_xXxv0nryH0yB6C1NeG-kegjBaS30Zm6o"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Brand Ethos - Asymmetric Grid -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-20">
+<h2 class="text-4xl md:text-5xl mb-4">Crafting the Digital Atelier</h2>
+<div class="w-20 h-0.5 bg-primary mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-8 items-start">
+<div class="space-y-6 mt-12">
+<div class="text-primary-container"><span class="material-symbols-outlined text-4xl" data-weight="fill">verified</span></div>
+<h3 class="text-2xl">Curation Over Volume</h3>
+<p class="text-on-surface-variant leading-relaxed font-light">We don't believe in infinite scrolls. We believe in the right five items. Each piece in our lounge is hand-selected for its soul, utility, and aesthetic harmony.</p>
+</div>
+<div class="space-y-6">
+<div class="text-primary-container"><span class="material-symbols-outlined text-4xl" data-weight="fill">auto_awesome</span></div>
+<h3 class="text-2xl">The Soft-Touch Experience</h3>
+<p class="text-on-surface-variant leading-relaxed font-light">Inspired by the "Digital Atelier" philosophy, our interfaces are designed to feel like high-end tactile paper. Effortless, quiet, and deeply responsive.</p>
+<div class="rounded-2xl overflow-hidden aspect-[3/4] shadow-lg">
+<img class="w-full h-full object-cover" data-alt="Beautifully wrapped gift box with silk ribbon in a soft dusty rose color palette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoOWGjqdJYQlL_oVKANTBfnnZ7o-PyZ-R2t_g-PH53J67XlGriClN8H74NlSNzLT-Ycl5nq_zXEsACFDKEj-eCMWc751C2KDd0wbiGmswPBt7iUrK_cVolfN1EiXAJ8XNQVfBzys9aosl-MTGd3twwPI7WlgOWjx2TEPYp0CrWXb7mUhxD305iOMBCB86g7WQ4xV1VA6CUnFV5-AmhnCzmIvhuUD5srhRIEAHhu3yJ5VZIpF-ENsYaQK-L8jYWk-pSrAcT0HrMaNg"/>
+</div>
+</div>
+<div class="space-y-6 mt-24">
+<div class="text-primary-container"><span class="material-symbols-outlined text-4xl" data-weight="fill">local_shipping</span></div>
+<h3 class="text-2xl">Global Roots, Local Heart</h3>
+<p class="text-on-surface-variant leading-relaxed font-light">From the boutiques of Seoul to the design houses of Milan, we source globally but pack with a local, personal touch that turns delivery into a ritual.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- The Gifting Ritual (Feature Highlight) -->
+<section class="py-24 bg-white">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row gap-16 items-center">
+<div class="flex-1 space-y-8">
+<h2 class="text-4xl md:text-6xl tracking-tight leading-tight">Every Delivery is a <span class="text-secondary italic font-normal">Ceremony.</span></h2>
+<p class="text-lg text-on-surface-variant leading-relaxed">We believe the excitement of a new find begins long before you open the box. Our signature Gift Lounge experience ensures every order arrives in sustainably sourced, textured packaging that reflects the quality inside.</p>
+<ul class="space-y-4">
+<li class="flex items-center gap-4 text-on-surface">
+<span class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-primary material-symbols-outlined text-sm">check</span>
+<span class="font-medium">Acid-free tissue paper with bespoke patterns</span>
+</li>
+<li class="flex items-center gap-4 text-on-surface">
+<span class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-primary material-symbols-outlined text-sm">check</span>
+<span class="font-medium">Hand-written calligraphy notes</span>
+</li>
+<li class="flex items-center gap-4 text-on-surface">
+<span class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-primary material-symbols-outlined text-sm">check</span>
+<span class="font-medium">Signature scent-strips from our Gift Lounge</span>
+</li>
+</ul>
+</div>
+<div class="flex-1 grid grid-cols-2 gap-4">
+<img class="rounded-2xl aspect-square object-cover shadow-sm" data-alt="Overhead view of luxury paper samples and ribbons in soft pink and neutral tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8EreqgDNuDNPMhzUDfyUGugyJdlFevmk7yW4dTyVCoL-1Tj6gMyUzdHQjtFaS63O7wuImfBHISjgdg4-ebEvsvuNR6gtx5JUpVqgVQHwtlc8DIkAS0beUDMXqldx5EVO4mg1vz47_cStdClXK9bldIHLOd-Sce9wWkZdqqiUI4D92cVUV5AdlEnagVSgRESTlSoUQbSQ0loUONrcdyxWVWPTAcTmUmKHASx43YJNvdQ8WZbTZjGBFM-uk4Pd1QrIHs-wHTpLzoBk"/>
+<img class="rounded-2xl aspect-square object-cover shadow-sm translate-y-8" data-alt="Interior of a modern high-end minimalist boutique with soft lighting and wooden accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA66twd1EvXFNvMf2H-CkFaZMEise_C54EMjVWthC2C9O2dMm9tiZAX1L4VVY8mzgtMcPPV1UflwzgESvb4L4ymxOxAE8Ubm2rI73xZZxffFeIp9GFOlFtOoKlAKi7tYNB7uwd4T-TQZpdkoT1RZrKj_o8pVXprg5feF1WVpKymeM_JHHTIsMFTrIzMfk0DHuS9z1eEdHi2Ttf4GJke4SioJtoytc4CyiB2NaIUbFKGxU8d-Z3_8KB8CM-f4N_Bq_uowM2thvEILHs"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / CTA -->
+<section class="py-24 px-8">
+<div class="max-w-5xl mx-auto rounded-[2.5rem] bg-surface-container-highest p-12 md:p-24 text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -mr-32 -mt-32"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary-container/20 rounded-full blur-3xl -ml-32 -mb-32"></div>
+<h2 class="text-3xl md:text-5xl mb-6 relative z-10">Join the Atelier</h2>
+<p class="text-on-surface-variant max-w-xl mx-auto mb-10 relative z-10 leading-relaxed">Subscribe to receive first access to our monthly curated edits and aesthetic inspiration for your daily ritual.</p>
+<form class="flex flex-col md:flex-row gap-4 max-w-md mx-auto relative z-10">
+<input class="flex-grow bg-surface border-0 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-primary-container text-on-surface outline-none" placeholder="Your email address" type="email"/>
+<button class="cta-gradient text-white px-8 py-4 rounded-2xl font-semibold shadow-lg hover:shadow-xl transition-all">Subscribe</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-slate-950 full-width pt-16 pb-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 max-w-7xl mx-auto">
+<div class="space-y-4">
+<div class="text-xl font-serif text-on-surface dark:text-white">Elegant Finds</div>
+<p class="text-on-surface-variant/80 dark:text-slate-500 text-sm leading-relaxed">A curated editorial experience for the modern aesthetic enthusiast.</p>
+</div>
+<div class="flex flex-col gap-3">
+<span class="text-xs font-bold tracking-widest text-on-surface mb-2">CONNECT</span>
+<a class="text-on-surface-variant/80 dark:text-slate-500 hover:text-primary dark:hover:text-pink-200 underline-offset-4 hover:underline transition-all" href="#">WhatsApp</a>
+<a class="text-on-surface-variant/80 dark:text-slate-500 hover:text-primary dark:hover:text-pink-200 underline-offset-4 hover:underline transition-all" href="#">Instagram</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="text-xs font-bold tracking-widest text-on-surface mb-2">GUIDES</span>
+<a class="text-on-surface-variant/80 dark:text-slate-500 hover:text-primary dark:hover:text-pink-200 underline-offset-4 hover:underline transition-all" href="#">Shipping</a>
+<a class="text-on-surface-variant/80 dark:text-slate-500 hover:text-primary dark:hover:text-pink-200 underline-offset-4 hover:underline transition-all" href="#">Contact</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="text-xs font-bold tracking-widest text-on-surface mb-2">COMMUNITY</span>
+<a class="text-on-surface-variant/80 dark:text-slate-500 hover:text-primary dark:hover:text-pink-200 underline-offset-4 hover:underline transition-all" href="#">Newsletter</a>
+<a class="text-on-surface-variant/80 dark:text-slate-500 hover:text-primary dark:hover:text-pink-200 underline-offset-4 hover:underline transition-all" href="#">Membership</a>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-12 mt-16 pt-8 border-t border-outline-variant/10 text-center">
+<p class="text-on-surface-variant/60 text-xs">© 2024 Elegant Finds. Designed for the Digital Atelier.</p>
+</div>
+</footer>
+</body></html>

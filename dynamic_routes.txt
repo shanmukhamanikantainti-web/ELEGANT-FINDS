@@ -1,0 +1,6 @@
+C:\Users\shanm\OneDrive\Desktop\elegantfinds\app\admin\products\[id]
+C:\Users\shanm\OneDrive\Desktop\elegantfinds\app\api\admin\orders\[id]
+C:\Users\shanm\OneDrive\Desktop\elegantfinds\app\api\products\[id]
+C:\Users\shanm\OneDrive\Desktop\elegantfinds\app\api\products\[slug]
+C:\Users\shanm\OneDrive\Desktop\elegantfinds\app\products\[slug]
+C:\Users\shanm\OneDrive\Desktop\elegantfinds\app\products\{[slug]}

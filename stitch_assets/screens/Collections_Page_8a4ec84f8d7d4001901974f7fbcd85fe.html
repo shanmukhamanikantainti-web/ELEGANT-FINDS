@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Elegant Finds | Collections</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary": "#805065",
+                    "on-secondary-fixed-variant": "#65394d",
+                    "on-primary-fixed-variant": "#8d0051",
+                    "tertiary-fixed-dim": "#c6c6c7",
+                    "inverse-on-surface": "#f1f1f1",
+                    "surface-tint": "#b7046c",
+                    "tertiary-container": "#939494",
+                    "on-tertiary-fixed-variant": "#454747",
+                    "outline": "#8b7078",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed": "#330e21",
+                    "primary-fixed-dim": "#ffb0cc",
+                    "on-surface-variant": "#584048",
+                    "surface-container-low": "#f3f3f3",
+                    "surface-bright": "#f9f9f9",
+                    "surface": "#f9f9f9",
+                    "on-primary-fixed": "#3e0021",
+                    "surface-container-highest": "#e2e2e2",
+                    "background": "#f9f9f9",
+                    "tertiary-fixed": "#e2e2e2",
+                    "on-primary-container": "#5d0034",
+                    "error": "#ba1a1a",
+                    "surface-variant": "#e2e2e2",
+                    "on-secondary-container": "#7b4b60",
+                    "on-primary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-surface": "#1a1c1c",
+                    "outline-variant": "#dfbec8",
+                    "secondary-fixed": "#ffd8e6",
+                    "primary": "#b7046c",
+                    "surface-dim": "#dadada",
+                    "inverse-surface": "#2f3131",
+                    "on-tertiary-container": "#2b2d2d",
+                    "inverse-primary": "#ffb0cc",
+                    "on-background": "#1a1c1c",
+                    "secondary-container": "#fec0d9",
+                    "surface-container-high": "#e8e8e8",
+                    "on-error": "#ffffff",
+                    "secondary-fixed-dim": "#f2b6ce",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "surface-container": "#eeeeee",
+                    "primary-container": "#ff4fa3",
+                    "on-secondary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary": "#5d5f5f",
+                    "primary-fixed": "#ffd9e4",
+                    "on-error-container": "#93000a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-editorial {
+            font-family: 'Noto Serif', serif;
+            letter-spacing: -0.02em;
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopNavBar -->
+<header class="bg-surface/80 backdrop-blur-xl docked full-width top-0 sticky z-50 transition-all duration-300">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-12">
+<a class="text-2xl font-serif tracking-tighter text-on-surface" href="#">Elegant Finds</a>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-300" href="#">Hair Studio</a>
+<a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-300" href="#">Jewelry Edit</a>
+<a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-300" href="#">Korean Picks</a>
+<a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-300" href="#">Gift Lounge</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden lg:flex items-center bg-surface-container-low px-4 py-2 rounded-full w-64 group focus-within:bg-surface-container-highest transition-all duration-300">
+<span class="material-symbols-outlined text-on-surface-variant text-sm mr-2">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-full placeholder:text-on-surface-variant/60" placeholder="Search collections..." type="text"/>
+</div>
+<div class="flex items-center gap-4">
+<button class="hover:text-primary transition-colors duration-200">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+<button class="hover:text-primary transition-colors duration-200">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+<button class="md:hidden">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-screen-2xl mx-auto px-8 pt-12 pb-24">
+<!-- Editorial Header Section -->
+<section class="mb-20">
+<div class="max-w-3xl">
+<p class="text-primary font-bold tracking-widest text-xs mb-4 uppercase">The Digital Atelier</p>
+<h1 class="text-6xl md:text-8xl text-editorial font-bold mb-6 text-on-surface">Curated Collections</h1>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-2xl font-light">
+                    Explore our meticulously selected ensembles. From the delicate charm of Seoul's streets to the timeless elegance of artisanal jewelry, we bring the world's finest aesthetics to your wardrobe.
+                </p>
+</div>
+</section>
+<!-- Collections Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Hair Studio: Large Vertical Card -->
+<div class="md:col-span-5 lg:col-span-4 group cursor-pointer">
+<div class="relative h-[600px] overflow-hidden rounded-xl bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of a elegant woman's back with silk hair ribbons and artisanal clips in a sun-drenched minimalist studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsygo9n1SLBT6xI8Y74XtrFhJD0Jdx9QnWE5dGQL0hTHHFh09FsIVYdAws0DInSgtJkM96L7PdX0QjJZbNMjQWW1akYU4vpPtvNNKm9tXz3M-a45irMOa3WnFZjJhYh3g_rLqz0ENkcMBDb4xdODgfrWCfjnKGDL70L4q5SBwM7K1mumXTZpmTVDGZksq97iUT6ZmvKh6QC0g0f71ljyt4-ipidqZAtePOf1vQvsKfWZkQ259oZZ54g0Xiyk1NJcYnuqjP5Rnuz2Y"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/40 to-transparent flex flex-col justify-end p-10">
+<span class="text-white/80 text-xs font-bold tracking-widest mb-2 uppercase">Sculpted Tresses</span>
+<h2 class="text-4xl text-editorial text-white mb-4">Hair Studio</h2>
+<div class="h-1 w-0 bg-primary-container transition-all duration-500 group-hover:w-24"></div>
+</div>
+</div>
+</div>
+<!-- Jewelry Edit: Horizontal Feature -->
+<div class="md:col-span-7 lg:col-span-8 group cursor-pointer">
+<div class="relative h-[284px] mb-8 overflow-hidden rounded-xl bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Dainty gold necklaces and pearl rings arranged on a soft velvet tray with dramatic morning sunlight creating long shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9qoHjLpiQlakDn_uUnXtZB1lSCaTg7izJBNhNhrDWoShLqZ7NgW0fj6PjKJqVh4qc_r4HOdVRVPbEK_GSNAA1-MFLdK1dERJB3EsPGqEF923K9vnGo2thuSkpLcxveFuTXCOAkfWNVB4A221CAHMvpdcXgqwkt6IJhqLyzRx6k2y8TypUUy1DayWVMJZYfJlvmIz-lSfT2kKJU9mwJUQm6Qr6WcYM4-DylBnRoZr4DNZqg_LsFbE4cmNwYOsbevwaOWKdgkvAa5s"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300 flex flex-col justify-center px-12">
+<div class="max-w-md">
+<h2 class="text-4xl text-editorial text-white mb-2">Jewelry Edit</h2>
+<p class="text-white/90 text-sm font-light mb-6">Minimalist silhouettes meet ethereal glow. Pieces designed for the subtle statement.</p>
+<span class="inline-flex items-center text-white text-xs font-bold tracking-widest uppercase border-b border-white/40 pb-1">Shop The Edit</span>
+</div>
+</div>
+</div>
+<!-- Nested Grid for Korean Picks & Gift Lounge -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Korean Picks -->
+<div class="group cursor-pointer">
+<div class="relative h-[284px] overflow-hidden rounded-xl bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Contemporary Korean fashion flatlay with oversized pastel blazer, minimalist sneakers, and aesthetic stationery in a bright room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCoaO_NnVO54EFJ2emJOTtKOZTvMHbEds2rH5snhCYabhDKFkKEl3HO3ZTevFbLz80pPT6EV79f820hLemnVxoCKag2JhaR5gCqblY7hjSNMAqYfqpWAWXgWV4w-5GjzgkKjnaYZlyZ7r8v38yuv43iTl1YbhiS15PYgElT2Jpb4Lj1DMScwwkIPd17-LCwObX0_kVLegcrVeiPGBc15ewdkyZHnXCx4PVw4jPZ9hHoZIFVReWkj5XxYal36wjPaDyQcIYFTSHn_I"/>
+<div class="absolute inset-0 flex flex-col justify-between p-8">
+<span class="bg-secondary-container/90 backdrop-blur-md text-on-secondary-container px-3 py-1 rounded-full text-[10px] font-bold self-start uppercase tracking-wider">Seoul Aesthetic</span>
+<div class="bg-surface/90 backdrop-blur-md p-6 rounded-xl">
+<h3 class="text-2xl text-editorial text-on-surface mb-1">Korean Picks</h3>
+<p class="text-on-surface-variant text-xs font-medium">Curated street-to-studio looks.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Gift Lounge -->
+<div class="group cursor-pointer">
+<div class="relative h-[284px] overflow-hidden rounded-xl bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Beautifully wrapped luxury gifts with silk ribbons and dried flower accents on a neutral textured surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUHJUaSjw_35Wz2ZWg-zVUhh6sfQ_umAAhFqa3S7pwe2qr3CFY1Bw4YY133MhvO3fspoY5OGPznPlx7WPD-x1OA0Nw6FdgMcl3_Z2Z1wtyeGXUGo5ovloR885FzunozTIj0fFyuBEYGXQOK2Ep57wFcPcVxgf-L8D-7uVJTyi2en8rkRDfxkJkGi3-VmQNYWZR7kJjQFlxF5HXv0Xlp75ZUM2HHBdWhC5FFfEodQHIzjEv4i4V5jvmqlvfwmvwBsZarLlLorkivI8"/>
+<div class="absolute inset-0 flex flex-col items-center justify-center p-8 bg-on-primary-fixed-variant/20 group-hover:bg-on-primary-fixed-variant/10 transition-colors">
+<h3 class="text-3xl text-editorial text-white text-center">Gift Lounge</h3>
+<p class="text-white/80 text-xs mt-2 uppercase tracking-[0.2em]">Wrapped in Intention</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Everyday Essentials: Wide Bottom Row -->
+<div class="md:col-span-12 group cursor-pointer mt-4">
+<div class="relative h-[400px] overflow-hidden rounded-xl bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="A row of high-quality basic garments in cream, beige, and soft pink hanging on a wooden rack in an airy white room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFIRozx-rthK23PZm1Y3LxY_zrAk8xy5fqnTegeWzWldFQreJiRr3pIagYRENGikpK6D58gaMAkczFASPgx0XcrQ0xVgaKkqwYAT006kcM1TlWbz3aGo0nf-d64jFJWb51onf5v3GkauY12SDfxOIZmhTUoYHiKV58quYPh1KcSKAl1ant6F0D4wzvH-gum2K8tQn-GJfnT3Rv52F_77d8CuLrCai9NxGB2ve74j5MhxIAGnGb5xn0ibTAXRUL-nDfdt5JhT9QMOQ"/>
+<div class="absolute inset-0 flex flex-col items-end justify-center px-20">
+<div class="bg-surface/90 backdrop-blur-xl p-12 rounded-xl max-w-lg shadow-2xl shadow-primary/5">
+<h2 class="text-5xl text-editorial text-on-surface mb-4">Everyday Essentials</h2>
+<p class="text-on-surface-variant text-base mb-8 leading-relaxed">Elevated basics that form the foundation of an effortless wardrobe. Quality fabrics, perfect cuts.</p>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-8 py-3 rounded-full font-bold text-sm hover:scale-105 transition-transform duration-300">
+                                View The Collection
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quote / Divider Section -->
+<section class="mt-32 mb-20 text-center max-w-4xl mx-auto">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">format_quote</span>
+<blockquote class="text-3xl md:text-4xl text-editorial italic text-on-surface-variant leading-snug">
+                "Fashion is not just about utility; it's about the poetry of the everyday and the quiet confidence of a well-chosen piece."
+            </blockquote>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low pt-16 pb-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<h3 class="text-xl font-serif text-on-surface mb-6">Elegant Finds</h3>
+<p class="text-on-surface-variant/80 text-sm leading-relaxed mb-6 font-light">
+                    A curated digital atelier for those who find beauty in the subtle and strength in the minimal.
+                </p>
+<div class="flex gap-4">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+</div>
+</div>
+<div>
+<h4 class="text-xs font-bold uppercase tracking-widest text-on-surface mb-6 font-body">Connect</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant/80 text-sm hover:text-primary hover:underline underline-offset-4 transition-all" href="#">WhatsApp</a></li>
+<li><a class="text-on-surface-variant/80 text-sm hover:text-primary hover:underline underline-offset-4 transition-all" href="#">Instagram</a></li>
+<li><a class="text-on-surface-variant/80 text-sm hover:text-primary hover:underline underline-offset-4 transition-all" href="#">Newsletter</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold uppercase tracking-widest text-on-surface mb-6 font-body">Services</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant/80 text-sm hover:text-primary hover:underline underline-offset-4 transition-all" href="#">Shipping</a></li>
+<li><a class="text-on-surface-variant/80 text-sm hover:text-primary hover:underline underline-offset-4 transition-all" href="#">Contact</a></li>
+<li><a class="text-on-surface-variant/80 text-sm hover:text-primary hover:underline underline-offset-4 transition-all" href="#">Returns</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold uppercase tracking-widest text-on-surface mb-6 font-body">Newsletter</h4>
+<p class="text-on-surface-variant/80 text-xs mb-4">Join our Atelier for early access to drops.</p>
+<div class="flex">
+<input class="bg-surface border-none rounded-l-xl px-4 py-2 text-sm w-full focus:ring-1 focus:ring-primary" placeholder="Email address" type="email"/>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-r-xl">
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-outline-variant/10 text-center">
+<p class="text-on-surface-variant/60 text-[10px] uppercase tracking-[0.3em]">
+                © 2024 Elegant Finds. Designed for the Digital Atelier.
+            </p>
+</div>
+</footer>
+</body></html>

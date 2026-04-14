@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary": "#805065",
+                    "on-secondary-fixed-variant": "#65394d",
+                    "on-primary-fixed-variant": "#8d0051",
+                    "tertiary-fixed-dim": "#c6c6c7",
+                    "inverse-on-surface": "#f1f1f1",
+                    "surface-tint": "#b7046c",
+                    "tertiary-container": "#939494",
+                    "on-tertiary-fixed-variant": "#454747",
+                    "outline": "#8b7078",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed": "#330e21",
+                    "primary-fixed-dim": "#ffb0cc",
+                    "on-surface-variant": "#584048",
+                    "surface-container-low": "#f3f3f3",
+                    "surface-bright": "#f9f9f9",
+                    "surface": "#f9f9f9",
+                    "on-primary-fixed": "#3e0021",
+                    "surface-container-highest": "#e2e2e2",
+                    "background": "#f9f9f9",
+                    "tertiary-fixed": "#e2e2e2",
+                    "on-primary-container": "#5d0034",
+                    "error": "#ba1a1a",
+                    "surface-variant": "#e2e2e2",
+                    "on-secondary-container": "#7b4b60",
+                    "on-primary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-surface": "#1a1c1c",
+                    "outline-variant": "#dfbec8",
+                    "secondary-fixed": "#ffd8e6",
+                    "primary": "#b7046c",
+                    "surface-dim": "#dadada",
+                    "inverse-surface": "#2f3131",
+                    "on-tertiary-container": "#2b2d2d",
+                    "inverse-primary": "#ffb0cc",
+                    "on-background": "#1a1c1c",
+                    "secondary-container": "#fec0d9",
+                    "surface-container-high": "#e8e8e8",
+                    "on-error": "#ffffff",
+                    "secondary-fixed-dim": "#f2b6ce",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "surface-container": "#eeeeee",
+                    "primary-container": "#ff4fa3",
+                    "on-secondary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary": "#5d5f5f",
+                    "primary-fixed": "#ffd9e4",
+                    "on-error-container": "#93000a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+        }
+        .editorial-shadow {
+            box-shadow: 0px 20px 40px rgba(183, 4, 108, 0.06);
+        }
+        .btn-primary-gradient {
+            background: linear-gradient(135deg, #b7046c 0%, #ff4fa3 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopNavBar -->
+<header class="bg-surface/80 dark:bg-slate-900/80 backdrop-blur-xl docked full-width top-0 sticky z-50">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-12">
+<a class="text-2xl font-serif tracking-tighter text-on-surface dark:text-white" href="#">Elegant Finds</a>
+<nav class="hidden md:flex gap-8">
+<a class="text-on-surface-variant dark:text-slate-400 font-medium hover:text-primary-container dark:hover:text-pink-200 transition-colors duration-300" href="#">Hair Studio</a>
+<a class="text-on-surface-variant dark:text-slate-400 font-medium hover:text-primary-container dark:hover:text-pink-200 transition-colors duration-300" href="#">Jewelry Edit</a>
+<a class="text-on-surface-variant dark:text-slate-400 font-medium hover:text-primary-container dark:hover:text-pink-200 transition-colors duration-300" href="#">Korean Picks</a>
+<a class="text-on-surface-variant dark:text-slate-400 font-medium hover:text-primary-container dark:hover:text-pink-200 transition-colors duration-300" href="#">Gift Lounge</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-primary dark:text-pink-300 font-bold border-b-2 border-primary pb-1 flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span class="hidden lg:inline">Wishlist</span>
+</button>
+<button class="text-on-surface-variant dark:text-slate-400 hover:text-primary transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+<span class="hidden lg:inline">Cart</span>
+</button>
+</div>
+</div>
+</header>
+<main class="max-w-screen-2xl mx-auto px-8 pt-16 pb-24">
+<!-- Wishlist Header -->
+<section class="mb-16">
+<h1 class="font-headline text-5xl md:text-6xl text-on-surface mb-4 tracking-tighter">My Favorites</h1>
+<p class="text-on-surface-variant max-w-lg leading-relaxed">
+                A curated selection of your most desired pieces. Keep track of what inspires you and make them yours when the moment is right.
+            </p>
+</section>
+<!-- Product Grid (Asymmetrical Editorial Style) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-16">
+<!-- Item 1: Hair Accessory -->
+<div class="group relative flex flex-col space-y-4">
+<div class="relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-lowest p-3 editorial-shadow">
+<img class="w-full h-full object-cover rounded-lg transition-transform duration-500 group-hover:scale-105" data-alt="High-end Korean style pearl hair pin on silk fabric, soft lighting, pastel pink tones, luxury editorial photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJPkUS7qOHAURQzWExNeHRwoyGVRIExDP46oC23k13_rM0n3a_okhxJYGxPX3bRwPxCrkch0NqNMW9OP78ytohewrMWQRp7uPhuxFEudKD0L4dhGUnugTLGjBH5vNdgN-2M7D5V07YtKrmTj4ksUCfNt29IlwIy8cbQIK-1Z0W4DsgSdcE6HgmjS0Mu90WTD4j4DB_ID3FPEB9UQrndD_bWSyGZsVhnOKccP0JpbHU5mwVLR2vegtplbiXLBC0SrwZUEB94Zo8Uvs"/>
+<button class="absolute top-6 right-6 w-10 h-10 rounded-full bg-white/80 backdrop-blur-md flex items-center justify-center text-primary editorial-shadow transition-transform active:scale-90">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<div class="px-2">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-xs font-bold tracking-widest uppercase text-primary/60 mb-1">Hair Studio</p>
+<h3 class="text-lg font-medium text-on-surface leading-tight">Luna Pearl Claw Clip</h3>
+</div>
+<span class="text-lg font-serif">$32.00</span>
+</div>
+<button class="w-full mt-6 py-3 rounded-xl btn-primary-gradient text-white font-medium flex items-center justify-center gap-2 transition-all hover:brightness-110 active:scale-95 editorial-shadow">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+                        Add to Cart
+                    </button>
+</div>
+</div>
+<!-- Item 2: Jewelry (Staggered height via container padding) -->
+<div class="group relative flex flex-col space-y-4 md:mt-12">
+<div class="relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-lowest p-3 editorial-shadow">
+<img class="w-full h-full object-cover rounded-lg transition-transform duration-500 group-hover:scale-105" data-alt="Minimalist gold drop earrings on a marble pedestal, soft natural light, shadows creating depth, high fashion jewelry aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfE56FtKMpbwkPvV9ZogqdFw44pANtfYJK73s7r9kGraSnowpXi_p_Y1RlJAxeRr3k9rvt9uAL1j6ylNsSAARtA9hgQ9UP_Lk4Q_jeDh16-x5GYlSiTLXBqTASjB7jqeAl8_Ipo5d8S5YY_J-3yuS_Tgjj-P_o_1PYeiHE8KzyTzzMOMuWaiWjnFH0Jyn_rSbsHymR3r9sNrJANdUiQKot8DKlQsxojOqjYppxeJdTW8HeLAVsmmbnxwJnLwko-USLxkKdBsA2hBk"/>
+<button class="absolute top-6 right-6 w-10 h-10 rounded-full bg-white/80 backdrop-blur-md flex items-center justify-center text-primary editorial-shadow transition-transform active:scale-90">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<div class="px-2">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-xs font-bold tracking-widest uppercase text-primary/60 mb-1">Jewelry Edit</p>
+<h3 class="text-lg font-medium text-on-surface leading-tight">Gilded Petal Drops</h3>
+</div>
+<span class="text-lg font-serif">$85.00</span>
+</div>
+<button class="w-full mt-6 py-3 rounded-xl btn-primary-gradient text-white font-medium flex items-center justify-center gap-2 transition-all hover:brightness-110 active:scale-95 editorial-shadow">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+                        Add to Cart
+                    </button>
+</div>
+</div>
+<!-- Item 3: Accessory -->
+<div class="group relative flex flex-col space-y-4">
+<div class="relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-lowest p-3 editorial-shadow">
+<img class="w-full h-full object-cover rounded-lg transition-transform duration-500 group-hover:scale-105" data-alt="Delicate silk hair ribbon with floral pattern, draped elegantly, soft focus background, ethereal lighting, Korean coquette aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnAtpchbLRGfSLIYFQ_j6h5gKbT8Cgn8ytl8trMJQngUuCqdcIDhqFZ7Y3hinyb9nzEK6NAXmOaeJjGl-Ey0JATOtJE5twTbBcZvm_GYpmARILBqtRFvgM2b4Q7vHggYUZmC17UsyDXDnJ8jQz_C0sWpRDQjG99N182ZiPN56AEX649_XGkUlr3tyFZT87LyAVIdmQa6m1t3nYA3_uTkCu06QkP9lJyVqQ8iIw2QPGV2aQccj8yRtMikrZhSvtNAB7_bNTthNLW2w"/>
+<button class="absolute top-6 right-6 w-10 h-10 rounded-full bg-white/80 backdrop-blur-md flex items-center justify-center text-primary editorial-shadow transition-transform active:scale-90">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<div class="px-2">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-xs font-bold tracking-widest uppercase text-primary/60 mb-1">Korean Picks</p>
+<h3 class="text-lg font-medium text-on-surface leading-tight">Silk Blossom Ribbon</h3>
+</div>
+<span class="text-lg font-serif">$24.00</span>
+</div>
+<button class="w-full mt-6 py-3 rounded-xl btn-primary-gradient text-white font-medium flex items-center justify-center gap-2 transition-all hover:brightness-110 active:scale-95 editorial-shadow">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+                        Add to Cart
+                    </button>
+</div>
+</div>
+<!-- Item 4: Necklace -->
+<div class="group relative flex flex-col space-y-4 md:mt-12">
+<div class="relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-lowest p-3 editorial-shadow">
+<img class="w-full h-full object-cover rounded-lg transition-transform duration-500 group-hover:scale-105" data-alt="Dainty gold chain necklace with a small pink gemstone pendant, studio lighting, clean white background, minimalist luxury" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzBRjEGkU2voUIN5rLN7B-h3CD3XX6t38fu6euJmhrz6FIlPVmKH5GAJ_mLHvFf-gKyDUoHYEhaukUjyQUcx9cfWhsK22FqoX4TZvUJTh_hfHKlitC7OHbqRKd9L6E4bBHndFFXdTx5uLM1gM2cEh3yOCmYkLXEnLH9Za-0DB0sUP9IDwY9PdvzSQfv7jfQ34oSbj3rdZL9UzRDdp8G-wW-uAG6LkNrRPblBRxHR0PhlL-hl6B5JXETrFIyTI1xQpAz6zF1cnMups"/>
+<button class="absolute top-6 right-6 w-10 h-10 rounded-full bg-white/80 backdrop-blur-md flex items-center justify-center text-primary editorial-shadow transition-transform active:scale-90">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<div class="px-2">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-xs font-bold tracking-widest uppercase text-primary/60 mb-1">Jewelry Edit</p>
+<h3 class="text-lg font-medium text-on-surface leading-tight">Rose Quartz Solitaire</h3>
+</div>
+<span class="text-lg font-serif">$110.00</span>
+</div>
+<button class="w-full mt-6 py-3 rounded-xl btn-primary-gradient text-white font-medium flex items-center justify-center gap-2 transition-all hover:brightness-110 active:scale-95 editorial-shadow">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+                        Add to Cart
+                    </button>
+</div>
+</div>
+</div>
+<!-- Empty State (Hidden by default, shown if grid is empty) -->
+<!-- Note: Removing 'hidden' would demonstrate the empty state -->
+<section class="hidden flex flex-col items-center justify-center py-24 text-center">
+<div class="w-24 h-24 rounded-full bg-secondary-container flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary text-4xl">favorite_border</span>
+</div>
+<h2 class="font-headline text-3xl mb-4">Your wishlist is waiting</h2>
+<p class="text-on-surface-variant max-w-sm mb-10 leading-relaxed">
+                Explore our curated collections and save your favorite finds to see them appear here.
+            </p>
+<a class="px-10 py-4 rounded-xl btn-primary-gradient text-white font-semibold editorial-shadow transition-transform active:scale-95" href="#">
+                Start Shopping
+            </a>
+</section>
+<!-- Newsletter / CTA Section -->
+<section class="mt-32 p-12 rounded-xl bg-secondary-container/30 border-outline-variant/10 border-2">
+<div class="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+<div>
+<h2 class="font-headline text-4xl mb-4 leading-tight">Join the Atelier</h2>
+<p class="text-on-surface-variant leading-relaxed">Be the first to know about new collection drops and receive exclusive editorial content from our stylists.</p>
+</div>
+<form class="flex flex-col sm:flex-row gap-4">
+<input class="flex-grow bg-white px-6 py-4 rounded-xl border-0 ring-1 ring-outline-variant/20 focus:ring-2 focus:ring-primary outline-none text-on-surface" placeholder="Your email address" type="email"/>
+<button class="px-8 py-4 bg-primary text-white rounded-xl font-bold hover:bg-on-primary-container transition-colors" type="submit">Join</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-slate-950 full-width pt-16 pb-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 max-w-7xl mx-auto">
+<div class="flex flex-col gap-4">
+<span class="text-xl font-serif text-on-surface dark:text-white">Elegant Finds</span>
+<p class="text-on-surface-variant/80 dark:text-slate-500 text-sm leading-relaxed">Curating the finest in Korean-inspired minimalist beauty and luxury accessories.</p>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-headline text-primary dark:text-pink-400 font-bold mb-2">Connect</h4>
+<a class="text-on-surface-variant/80 dark:text-slate-500 hover:text-primary dark:hover:text-pink-200 underline-offset-4 hover:underline" href="#">WhatsApp</a>
+<a class="text-on-surface-variant/80 dark:text-slate-500 hover:text-primary dark:hover:text-pink-200 underline-offset-4 hover:underline" href="#">Instagram</a>
+<a class="text-on-surface-variant/80 dark:text-slate-500 hover:text-primary dark:hover:text-pink-200 underline-offset-4 hover:underline" href="#">Newsletter</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-headline text-primary dark:text-pink-400 font-bold mb-2">Support</h4>
+<a class="text-on-surface-variant/80 dark:text-slate-500 hover:text-primary dark:hover:text-pink-200 underline-offset-4 hover:underline" href="#">Shipping</a>
+<a class="text-on-surface-variant/80 dark:text-slate-500 hover:text-primary dark:hover:text-pink-200 underline-offset-4 hover:underline" href="#">Contact</a>
+<a class="text-on-surface-variant/80 dark:text-slate-500 hover:text-primary dark:hover:text-pink-200 underline-offset-4 hover:underline" href="#">Returns</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-headline text-primary dark:text-pink-400 font-bold mb-2">Legal</h4>
+<a class="text-on-surface-variant/80 dark:text-slate-500 hover:text-primary dark:hover:text-pink-200 underline-offset-4 hover:underline" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant/80 dark:text-slate-500 hover:text-primary dark:hover:text-pink-200 underline-offset-4 hover:underline" href="#">Terms of Service</a>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-outline-variant/10 text-center">
+<p class="text-on-surface-variant/60 text-xs px-12">© 2024 Elegant Finds. Designed for the Digital Atelier.</p>
+</div>
+</footer>
+</body></html>
