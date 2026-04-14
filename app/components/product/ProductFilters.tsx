@@ -1,7 +1,7 @@
 'use client'
 
 import { usePathname, useSearchParams, useRouter } from 'next/navigation'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense } from 'react'
 
 interface Category {
   id: number
@@ -22,7 +22,7 @@ const STATIC_CATEGORIES: Category[] = [
   { id: 8, name: 'Decor', slug: 'decor', count: 8 },
 ]
 
-export default function ProductFilters() {
+function ProductFiltersContent() {
   const router = useRouter()
   const pathname = usePathname()
   const searchParams = useSearchParams()
@@ -136,5 +136,13 @@ export default function ProductFilters() {
         </label>
       </div>
     </div>
+  )
+}
+
+export default function ProductFilters() {
+  return (
+    <Suspense fallback={<div className="h-64 animate-pulse bg-surface-variant/20 rounded-2xl" />}>
+      <ProductFiltersContent />
+    </Suspense>
   )
 }

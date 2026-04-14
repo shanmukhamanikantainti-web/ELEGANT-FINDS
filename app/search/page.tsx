@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
@@ -8,7 +8,7 @@ import { Search, ArrowLeft } from 'lucide-react'
 import ProductCard from '@/app/components/product/ProductCard'
 import { Product } from '@/lib/utils/constants'
 
-export default function SearchPage() {
+function SearchContent() {
   const searchParams = useSearchParams()
   const query = searchParams.get('q') || ''
 
@@ -156,5 +156,17 @@ export default function SearchPage() {
         )}
       </div>
     </div>
+  )
+}
+
+export default function SearchPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen py-20 text-center">
+        <div className="w-12 h-12 border-4 border-burgundy-700 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+      </div>
+    }>
+      <SearchContent />
+    </Suspense>
   )
 }
